@@ -163,7 +163,7 @@ resource "aws_security_group" "node" {
   )
 
   lifecycle {
-    create_before_destroy = true
+    create_before_destroy = false # Gabriel: use default value while migrating from v17
   }
 }
 
